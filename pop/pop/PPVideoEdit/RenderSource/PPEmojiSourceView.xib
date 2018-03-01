@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPEmojiSourceView">
+            <connections>
+                <outlet property="collectionView" destination="GJ5-qs-gHF" id="axG-8k-9tV"/>
+                <outlet property="contentHeightConstraint" destination="UPg-C0-p7L" id="rCM-qD-9XS"/>
+                <outlet property="contentView" destination="nWS-TP-UK8" id="I60-w5-ai5"/>
+                <outlet property="headerHeightConstraint" destination="9vK-gd-Iie" id="GvU-kz-mX7"/>
+                <outlet property="panGesture" destination="Gc6-rG-USi" id="34W-CJ-tk9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-TP-UK8" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="392" width="375" height="275"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-gD-sZo" userLabel="HeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit_ horizontal_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Llb-Tm-CoJ">
+                                    <rect key="frame" x="155" y="12" width="65" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="IxG-Un-WX5"/>
+                                        <constraint firstAttribute="width" constant="65" id="s2m-AV-loj"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="Llb-Tm-CoJ" firstAttribute="centerY" secondItem="pgd-gD-sZo" secondAttribute="centerY" id="5j8-5C-xW7"/>
+                                <constraint firstAttribute="height" constant="35" id="9vK-gd-Iie"/>
+                                <constraint firstItem="Llb-Tm-CoJ" firstAttribute="centerX" secondItem="pgd-gD-sZo" secondAttribute="centerX" id="h8I-Fa-n9G"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Gc6-rG-USi" appends="YES" id="Hxx-CG-FdX"/>
+                            </connections>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GJ5-qs-gHF">
+                            <rect key="frame" x="0.0" y="35" width="375" height="240"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="18R-mG-BEe">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="8BH-LT-2ae"/>
+                                <outlet property="delegate" destination="-1" id="DVI-xB-b3k"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="pgd-gD-sZo" firstAttribute="leading" secondItem="nWS-TP-UK8" secondAttribute="leading" id="10n-RC-qwT"/>
+                        <constraint firstItem="GJ5-qs-gHF" firstAttribute="top" secondItem="pgd-gD-sZo" secondAttribute="bottom" id="4j9-rt-cBb"/>
+                        <constraint firstAttribute="trailing" secondItem="GJ5-qs-gHF" secondAttribute="trailing" id="6EH-hT-sJx"/>
+                        <constraint firstItem="pgd-gD-sZo" firstAttribute="top" secondItem="nWS-TP-UK8" secondAttribute="top" id="FKy-tN-Hia"/>
+                        <constraint firstAttribute="height" constant="275" id="UPg-C0-p7L"/>
+                        <constraint firstItem="GJ5-qs-gHF" firstAttribute="leading" secondItem="nWS-TP-UK8" secondAttribute="leading" id="bga-ww-rL2"/>
+                        <constraint firstAttribute="trailing" secondItem="pgd-gD-sZo" secondAttribute="trailing" id="p5h-Om-97A"/>
+                        <constraint firstAttribute="bottom" secondItem="GJ5-qs-gHF" secondAttribute="bottom" id="qHT-Pc-v50"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nWS-TP-UK8" secondAttribute="bottom" id="fyT-wU-gIB"/>
+                <constraint firstAttribute="trailing" secondItem="nWS-TP-UK8" secondAttribute="trailing" id="ojT-WT-QhX"/>
+                <constraint firstItem="nWS-TP-UK8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vvt-mg-vid"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="QSA-h1-r3G" appends="YES" id="jPA-do-aYY"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="160.5"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="Gc6-rG-USi">
+            <connections>
+                <action selector="onHeaderViewPan:" destination="-1" id="FyW-MJ-6NL"/>
+            </connections>
+        </panGestureRecognizer>
+        <tapGestureRecognizer id="QSA-h1-r3G">
+            <connections>
+                <action selector="onBlankAreaClick:" destination="-1" id="21V-fy-1kS"/>
+                <outlet property="delegate" destination="-1" id="I5s-3G-hOX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="0TP-Le-QZp" userLabel="Down Swipe Gesture"/>
+        <swipeGestureRecognizer direction="up" id="dus-MH-A3i" userLabel="Up Swipe Gesture Recognizer"/>
+    </objects>
+    <resources>
+        <image name="edit_ horizontal_icon" width="65" height="9"/>
+    </resources>
+</document>
