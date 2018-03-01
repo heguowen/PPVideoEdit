@@ -5,3 +5,4 @@
 完整的app，下载之后就可以运行。
 
 下面是界面截图
+! [主界面] (PPVideoEdit/screenshots/WechatIMG701519891102_.pic.jpg)；
