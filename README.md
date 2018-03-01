@@ -6,4 +6,4 @@
 
 下面是界面截图
 
-![主界面](https://github.com/heguowen/PPVideoEdit/blob/master/screenshots/1.jpg)；
+ <img src="https://github.com/heguowen/PPVideoEdit/blob/master/screenshots/1.jpg" width = 50% height = 50% alt="图片名称" align=center />
