@@ -16,8 +16,6 @@
 		2805B74E1F67D58F001248E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805B74D1F67D58F001248E5 /* CoreMedia.framework */; };
 		2805B7501F67D5D2001248E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805B74F1F67D5D2001248E5 /* libz.tbd */; };
 		2805B7521F67D72B001248E5 /* Emoji.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2805B7511F67D72B001248E5 /* Emoji.xcassets */; };
-		2805B75F1F67E3E4001248E5 /* PPEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */; };
-		2805B7601F67E3E4001248E5 /* PPEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */; };
 		280B04ED1F6633F200C32ED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04EC1F6633F200C32ED4 /* main.m */; };
 		280B04F01F6633F200C32ED4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04EF1F6633F200C32ED4 /* AppDelegate.m */; };
 		280B04F31F6633F200C32ED4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04F21F6633F200C32ED4 /* ViewController.m */; };
@@ -28,6 +26,8 @@
 		2818F7361F7B973E00DF6930 /* PPBasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818F7351F7B973E00DF6930 /* PPBasicNavigationController.m */; };
 		282582A31F8DB94300F217E8 /* PPRenderEmojiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 282582A21F8DB94300F217E8 /* PPRenderEmojiResult.m */; };
 		282582A61F8DB95100F217E8 /* PPRenderTextResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 282582A51F8DB95100F217E8 /* PPRenderTextResult.m */; };
+		2834A23D2059278E00D3988C /* PPEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2834A23B2059278E00D3988C /* PPEmojiCell.xib */; };
+		2834A23E2059278E00D3988C /* PPEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2834A23C2059278E00D3988C /* PPEmojiCell.m */; };
 		284471301F7395D100779E90 /* PPVideoClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2844712F1F7395D100779E90 /* PPVideoClipView.m */; };
 		284604781F9F1BC300984861 /* PPDrawLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 284604771F9F1BC300984861 /* PPDrawLayer.m */; };
 		285659CA1F8B1700002B95BF /* PPRenderLayerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 285659C91F8B1700002B95BF /* PPRenderLayerResult.m */; };
@@ -103,9 +103,6 @@
 		2805B74D1F67D58F001248E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2805B74F1F67D5D2001248E5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2805B7511F67D72B001248E5 /* Emoji.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Emoji.xcassets; sourceTree = "<group>"; };
-		2805B75C1F67E3E4001248E5 /* PPEmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPEmojiCell.h; path = ../../../PPEmojiCell.h; sourceTree = "<group>"; };
-		2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPEmojiCell.m; path = ../../../PPEmojiCell.m; sourceTree = "<group>"; };
-		2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PPEmojiCell.xib; path = ../../../PPEmojiCell.xib; sourceTree = "<group>"; };
 		280B04E81F6633F200C32ED4 /* pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280B04EC1F6633F200C32ED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		280B04EE1F6633F200C32ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +124,9 @@
 		282582A21F8DB94300F217E8 /* PPRenderEmojiResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRenderEmojiResult.m; sourceTree = "<group>"; };
 		282582A41F8DB95100F217E8 /* PPRenderTextResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRenderTextResult.h; sourceTree = "<group>"; };
 		282582A51F8DB95100F217E8 /* PPRenderTextResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRenderTextResult.m; sourceTree = "<group>"; };
+		2834A23A2059278E00D3988C /* PPEmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEmojiCell.h; sourceTree = "<group>"; };
+		2834A23B2059278E00D3988C /* PPEmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPEmojiCell.xib; sourceTree = "<group>"; };
+		2834A23C2059278E00D3988C /* PPEmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEmojiCell.m; sourceTree = "<group>"; };
 		2844712E1F7395D100779E90 /* PPVideoClipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPVideoClipView.h; sourceTree = "<group>"; };
 		2844712F1F7395D100779E90 /* PPVideoClipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPVideoClipView.m; sourceTree = "<group>"; };
 		284604761F9F1BC300984861 /* PPDrawLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDrawLayer.h; sourceTree = "<group>"; };
@@ -296,16 +296,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2805B75B1F67E0A3001248E5 /* Emoji */ = {
-			isa = PBXGroup;
-			children = (
-				2805B75C1F67E3E4001248E5 /* PPEmojiCell.h */,
-				2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */,
-				2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */,
-			);
-			path = Emoji;
-			sourceTree = "<group>";
-		};
 		280B04DF1F6633F200C32ED4 = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +356,7 @@
 				287E82701F78A4FE000B9885 /* ImageEditView */,
 				2844712D1F7395AC00779E90 /* ClipView */,
 				28DD288D1F6931E800A48E4B /* DrawingBoard */,
-				2805B75B1F67E0A3001248E5 /* Emoji */,
+				2834A2342059274900D3988C /* Emoji */,
 				2805B6CF1F67BB92001248E5 /* PPVideoEditController.h */,
 				2818F72D1F7B7B7C00DF6930 /* PPVideoEditController.m */,
 				28DF4F281F6A21C100F4C076 /* PPVideoEditDefines.h */,
@@ -395,6 +385,16 @@
 				2818F7311F7B942900DF6930 /* MBProgressHUD.m */,
 			);
 			path = MBProgressView;
+			sourceTree = "<group>";
+		};
+		2834A2342059274900D3988C /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				2834A23A2059278E00D3988C /* PPEmojiCell.h */,
+				2834A23C2059278E00D3988C /* PPEmojiCell.m */,
+				2834A23B2059278E00D3988C /* PPEmojiCell.xib */,
+			);
+			path = Emoji;
 			sourceTree = "<group>";
 		};
 		2844712D1F7395AC00779E90 /* ClipView */ = {
@@ -694,11 +694,11 @@
 				287E828D1F78A8E9000B9885 /* PPTextSourceView.xib in Resources */,
 				2805B6D81F67BBE8001248E5 /* PPVideoEdit.storyboard in Resources */,
 				280B05031F6639BD00C32ED4 /* Assets.xcassets in Resources */,
-				2805B7601F67E3E4001248E5 /* PPEmojiCell.xib in Resources */,
 				287E82981F78B0B8000B9885 /* PPImageEditView.xib in Resources */,
 				2805B7521F67D72B001248E5 /* Emoji.xcassets in Resources */,
 				288F838B1FA18E84003E3E4F /* TZImagePickerController.bundle in Resources */,
 				287E828C1F78A8E4000B9885 /* PPEmojiSourceView.xib in Resources */,
+				2834A23D2059278E00D3988C /* PPEmojiCell.xib in Resources */,
 				2805B6D71F67BBE8001248E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +746,7 @@
 				28DF4F2A1F6A30A500F4C076 /* PPVideoEditDefines.m in Sources */,
 				28A275FC1F6FCAD20042B3B1 /* PPToast.m in Sources */,
 				28A275FA1F6FCAD20042B3B1 /* PPHelper+Time.m in Sources */,
+				2834A23E2059278E00D3988C /* PPEmojiCell.m in Sources */,
 				287E82871F78A84B000B9885 /* PPRenderSourceView.m in Sources */,
 				2817F3FF1FA8626200449ADB /* PPAVAssetExportSession.m in Sources */,
 				28A2760A1F6FD0130042B3B1 /* PPMediaManager.m in Sources */,
@@ -761,7 +762,6 @@
 				28C238AE1F95A0060029D162 /* ICGVideoTrimmerView.m in Sources */,
 				28A2760D1F6FD54C0042B3B1 /* PPPermissionManager.m in Sources */,
 				2805B6CE1F67BB5A001248E5 /* PPBasicController.m in Sources */,
-				2805B75F1F67E3E4001248E5 /* PPEmojiCell.m in Sources */,
 				280B04ED1F6633F200C32ED4 /* main.m in Sources */,
 				2818F72E1F7B7B7D00DF6930 /* PPVideoEditController.m in Sources */,
 				28A276031F6FCAF70042B3B1 /* PPUserDefaults.m in Sources */,
