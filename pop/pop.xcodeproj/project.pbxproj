@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042CE0132091FF2E00EE1228 /* PPEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042CE0112091FF2E00EE1228 /* PPEmojiCell.m */; };
+		042CE0142091FF2E00EE1228 /* PPEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042CE0122091FF2E00EE1228 /* PPEmojiCell.xib */; };
 		2805B6681F677BB1001248E5 /* PPVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805B6671F677BB1001248E5 /* PPVideoPlayView.m */; };
 		2805B6CE1F67BB5A001248E5 /* PPBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805B6CD1F67BB5A001248E5 /* PPBasicController.m */; };
 		2805B6D61F67BBE8001248E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2805B6D31F67BBE8001248E5 /* LaunchScreen.storyboard */; };
@@ -16,8 +18,6 @@
 		2805B74E1F67D58F001248E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805B74D1F67D58F001248E5 /* CoreMedia.framework */; };
 		2805B7501F67D5D2001248E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805B74F1F67D5D2001248E5 /* libz.tbd */; };
 		2805B7521F67D72B001248E5 /* Emoji.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2805B7511F67D72B001248E5 /* Emoji.xcassets */; };
-		2805B75F1F67E3E4001248E5 /* PPEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */; };
-		2805B7601F67E3E4001248E5 /* PPEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */; };
 		280B04ED1F6633F200C32ED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04EC1F6633F200C32ED4 /* main.m */; };
 		280B04F01F6633F200C32ED4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04EF1F6633F200C32ED4 /* AppDelegate.m */; };
 		280B04F31F6633F200C32ED4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B04F21F6633F200C32ED4 /* ViewController.m */; };
@@ -91,6 +91,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042CE0102091FF2E00EE1228 /* PPEmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEmojiCell.h; sourceTree = "<group>"; };
+		042CE0112091FF2E00EE1228 /* PPEmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEmojiCell.m; sourceTree = "<group>"; };
+		042CE0122091FF2E00EE1228 /* PPEmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPEmojiCell.xib; sourceTree = "<group>"; };
 		2805B6661F677BB1001248E5 /* PPVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPVideoPlayView.h; sourceTree = "<group>"; };
 		2805B6671F677BB1001248E5 /* PPVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPVideoPlayView.m; sourceTree = "<group>"; };
 		2805B6CC1F67BB5A001248E5 /* PPBasicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBasicController.h; sourceTree = "<group>"; };
@@ -103,9 +106,6 @@
 		2805B74D1F67D58F001248E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2805B74F1F67D5D2001248E5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2805B7511F67D72B001248E5 /* Emoji.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Emoji.xcassets; sourceTree = "<group>"; };
-		2805B75C1F67E3E4001248E5 /* PPEmojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPEmojiCell.h; path = ../../../PPEmojiCell.h; sourceTree = "<group>"; };
-		2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPEmojiCell.m; path = ../../../PPEmojiCell.m; sourceTree = "<group>"; };
-		2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PPEmojiCell.xib; path = ../../../PPEmojiCell.xib; sourceTree = "<group>"; };
 		280B04E81F6633F200C32ED4 /* pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280B04EC1F6633F200C32ED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		280B04EE1F6633F200C32ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -266,6 +266,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042CE00F2091FF2E00EE1228 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				042CE0102091FF2E00EE1228 /* PPEmojiCell.h */,
+				042CE0112091FF2E00EE1228 /* PPEmojiCell.m */,
+				042CE0122091FF2E00EE1228 /* PPEmojiCell.xib */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 		2805B6D21F67BBE8001248E5 /* PPStoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,16 +304,6 @@
 				2805B74B1F67D544001248E5 /* VideoToolbox.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2805B75B1F67E0A3001248E5 /* Emoji */ = {
-			isa = PBXGroup;
-			children = (
-				2805B75C1F67E3E4001248E5 /* PPEmojiCell.h */,
-				2805B75D1F67E3E4001248E5 /* PPEmojiCell.m */,
-				2805B75E1F67E3E4001248E5 /* PPEmojiCell.xib */,
-			);
-			path = Emoji;
 			sourceTree = "<group>";
 		};
 		280B04DF1F6633F200C32ED4 = {
@@ -366,7 +366,6 @@
 				287E82701F78A4FE000B9885 /* ImageEditView */,
 				2844712D1F7395AC00779E90 /* ClipView */,
 				28DD288D1F6931E800A48E4B /* DrawingBoard */,
-				2805B75B1F67E0A3001248E5 /* Emoji */,
 				2805B6CF1F67BB92001248E5 /* PPVideoEditController.h */,
 				2818F72D1F7B7B7C00DF6930 /* PPVideoEditController.m */,
 				28DF4F281F6A21C100F4C076 /* PPVideoEditDefines.h */,
@@ -400,6 +399,7 @@
 		2844712D1F7395AC00779E90 /* ClipView */ = {
 			isa = PBXGroup;
 			children = (
+				042CE00F2091FF2E00EE1228 /* Emoji */,
 				28C238A41F959FEF0029D162 /* ICGVideoTrimmer */,
 				2844712E1F7395D100779E90 /* PPVideoClipView.h */,
 				2844712F1F7395D100779E90 /* PPVideoClipView.m */,
@@ -662,7 +662,7 @@
 				TargetAttributes = {
 					280B04E71F6633F200C32ED4 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 3P6F6UKN89;
+						DevelopmentTeam = D2XBEJ6876;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -694,11 +694,11 @@
 				287E828D1F78A8E9000B9885 /* PPTextSourceView.xib in Resources */,
 				2805B6D81F67BBE8001248E5 /* PPVideoEdit.storyboard in Resources */,
 				280B05031F6639BD00C32ED4 /* Assets.xcassets in Resources */,
-				2805B7601F67E3E4001248E5 /* PPEmojiCell.xib in Resources */,
 				287E82981F78B0B8000B9885 /* PPImageEditView.xib in Resources */,
 				2805B7521F67D72B001248E5 /* Emoji.xcassets in Resources */,
 				288F838B1FA18E84003E3E4F /* TZImagePickerController.bundle in Resources */,
 				287E828C1F78A8E4000B9885 /* PPEmojiSourceView.xib in Resources */,
+				042CE0142091FF2E00EE1228 /* PPEmojiCell.xib in Resources */,
 				2805B6D71F67BBE8001248E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +746,7 @@
 				28DF4F2A1F6A30A500F4C076 /* PPVideoEditDefines.m in Sources */,
 				28A275FC1F6FCAD20042B3B1 /* PPToast.m in Sources */,
 				28A275FA1F6FCAD20042B3B1 /* PPHelper+Time.m in Sources */,
+				042CE0132091FF2E00EE1228 /* PPEmojiCell.m in Sources */,
 				287E82871F78A84B000B9885 /* PPRenderSourceView.m in Sources */,
 				2817F3FF1FA8626200449ADB /* PPAVAssetExportSession.m in Sources */,
 				28A2760A1F6FD0130042B3B1 /* PPMediaManager.m in Sources */,
@@ -761,7 +762,6 @@
 				28C238AE1F95A0060029D162 /* ICGVideoTrimmerView.m in Sources */,
 				28A2760D1F6FD54C0042B3B1 /* PPPermissionManager.m in Sources */,
 				2805B6CE1F67BB5A001248E5 /* PPBasicController.m in Sources */,
-				2805B75F1F67E3E4001248E5 /* PPEmojiCell.m in Sources */,
 				280B04ED1F6633F200C32ED4 /* main.m in Sources */,
 				2818F72E1F7B7B7D00DF6930 /* PPVideoEditController.m in Sources */,
 				28A276031F6FCAF70042B3B1 /* PPUserDefaults.m in Sources */,
@@ -882,7 +882,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3P6F6UKN89;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/include\"",
 					"\"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/lib\"",
@@ -894,7 +894,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.pops;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.ppVideoEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -907,7 +907,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3P6F6UKN89;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/include\"",
 					"\"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/lib\"",
@@ -919,7 +919,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/pop/PPMediaProcesser/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.pops;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.ppVideoEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
