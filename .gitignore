@@ -1,9 +1,9 @@
-*.xcuserstate
-project.xcworkspace
-xcuserdata
-UserInterfaceState.xcuserstate
-project.xcworkspace/
-xcuserdata/
-UserInterface.xcuserstate 
-
+pop/*.xcuserstate
+pop/project.xcworkspace
+pop/xcuserdata
+pop/UserInterfaceState.xcuserstate
+pop/project.xcworkspace/
+pop/xcuserdata/
+pop/UserInterface.xcuserstate 
+pop/pop.xcodeproj/project.xcworkspace/xcuserdata/mac.xcuserdatad/
 
