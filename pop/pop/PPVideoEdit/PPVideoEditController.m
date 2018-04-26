@@ -23,9 +23,19 @@
 
 #import "PPCanvasView.h"
 #import "PPVideoClipView.h"
+#import <pthread.h>
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+static inline void pop_dispatch_async_on_main_queue(void (^block)(void)) {
+    if (pthread_main_np()) {
+        block();
+        
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
 
 @interface PPVideoEditController ()<PPRenderSourceViewDelegate,PPTextSourceViewDelegate,PPCanvasViewDelegate,PPVideoClipViewDelegate>
 {
@@ -325,7 +335,9 @@
                 [[PPMediaManager sharedManager] saveVideo:url.path toAblum:@"相机胶卷" complition:^(NSURL *assetUrl, NSError *error) {
                     if (assetUrl && !error) {
                         [[PPDirectoryManager sharedManager] cleanDirectory:[PPDirectoryManager sharedManager].tempDirectory];
-                        [[PPToast make:@"保存成功"] show];
+                        pop_dispatch_async_on_main_queue(^{
+                            [[PPToast make:@"保存成功"] show];
+                        });
                         NSLog(@"保存成功");
                         if (completion) {
                             completion();

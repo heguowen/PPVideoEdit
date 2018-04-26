@@ -13,7 +13,6 @@
 
 @interface PPVideoEditController : PPBasicController
 
-
 - (void)loadViewWithPHAsset:(PHAsset *)asset;
 
 @end

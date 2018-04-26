@@ -368,6 +368,4 @@ bool isLineIntersectRectangle(float linePointX1,
     return NO;
 }
 
-
-
 @end
