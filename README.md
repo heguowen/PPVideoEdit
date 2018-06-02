@@ -1,5 +1,5 @@
 # PPVideoEdit
-一个视频编辑，添加表情，添加文字的App
+PPVideoEdit是一个视频编辑，添加表情，添加文字的App
 功能方面仿照Instagram
 
 完整的app，下载之后就可以运行。
