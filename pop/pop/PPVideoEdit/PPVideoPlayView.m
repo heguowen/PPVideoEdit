@@ -34,6 +34,10 @@
 
 - (void)setPlayer:(AVPlayer*)player displayFullScreen:(BOOL)fullScreen
 {
+    self.backgroundColor = [UIColor blackColor];
+    [(AVPlayerLayer*)[self layer] setPlayer:player];
+    return;
+    
     if (!fullScreen) {
         [(AVPlayerLayer*)[self layer] setPlayer:player];
         return;
@@ -50,6 +54,7 @@
     AVAssetTrack *audioTrack = nil;
     
     CMTimeRange timeRange = CMTimeRangeMake(kCMTimeZero, source.duration); //[self cmtimeRangeFromTimestamp:timeStamp];
+    NSLog(@"timerange is %@",@(timeRange.duration.value/timeRange.duration.timescale));
     
     BOOL hasVideoTrack = NO;
     if (videoTracks.count > 0) {
@@ -69,7 +74,7 @@
         return;
     }
     AVMutableVideoCompositionInstruction *mainInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-    mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, [composition duration]);
+    mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, timeRange.duration);
     
     //  - Create an AVMutableVideoCompositionLayerInstruction for the video track and fix the orientation.
     AVMutableVideoCompositionLayerInstruction *videolayerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
